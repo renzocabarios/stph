@@ -63,86 +63,135 @@ export default function Home() {
 
     {/* Main Content - 2nd Page*/}
 
-    <div className="w-full flex justify-center py-12">
+    <div className="w-full flex justify-center py-40">
       <div
-        className="flex flex-col md:flex-row justify-between items-center max-w-[1440px] w-full p-6 rounded-lg gap-8"
+        className="flex flex-col md:flex-row justify-between items-center max-w-[1440px] w-full p-6 rounded-lg"
         style={{
-          background: "rgba(255, 255, 255, 0.1)", // Transparent white background
-          backdropFilter: "blur(10px)", // Blur effect
-          WebkitBackdropFilter: "blur(10px)", // Safari support
+          minHeight: "600px", // Minimum height for the container
+          background: "rgba(255, 255, 255, 0.05)", // Transparent white background
+          backdropFilter: "blur(6px)", // Blur effect
         }}
       >
 
     {/* Text Content */}
-      <div className="flex flex-col gap-4 max-w-[490px]">
-        <h2 className="text-2xl font-semibold text-white">
+      <div className="flex flex-col gap-10 max-w-[750px] pl-4">
+        <h2 className="text-4xl font-semibold text-white py-2">
           Winners Announced! Whackathon: Road to Bonkathon
         </h2>
-        <p className="text-white">
+        <p className="text-2xl font-thin text-white py-2">
           The results of this @SuperteamEarn listing are out. Congrats to the winners! These teams showcased their talent in blockchain & decentralized tech.
         </p>
-        <button className="px-4 py-2 border border-white text-white rounded-lg hover:bg-white hover:text-slate-400">
-          Read More
-        </button>
+        <button className="inline-flex justify-center gap-2 px-6 py-4 border-2 border-customBlue text-customBlue rounded-3xl hover:bg-customBlue hover:text-white transition-all duration-300 max-w-[250px] font-semibold">
+        Read More
+        <span className="text-lg">➜</span>
+      </button>
       </div>
 
     {/* Winners Section */}
-      <div className="flex flex-row items-center gap-4 bg-slate-100 p-10 pl-20 pb-20 pt-20 rounded-lg">
-
-            <div className="flex flex-col items-center gap-2">
-              <img
-                src="/tan.png"
-                alt="Jed Tan"
-                className="w-16 h-16 rounded-full object-cover"
-              />
-              <p className="font-medium">Jed Tan</p>
-              <p className="text-gray-600 text-sm">USDC 1,000</p>
-            </div>
-
-                  <div className="flex flex-col items-center gap-2">
-                    <img
-                      src="/sanwan.png"
-                      alt="Marc Anthony San Juan"
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
-                    <p className="font-medium text-center text-[px]">Marc Anthony San Juan</p>
-                    <p className="text-gray-600 text-sm">USDC 500</p>
-                  </div>
-
-                    <div className="flex flex-col items-center gap-2">
-                      <img
-                        src="/cayube.png"
-                        alt="Adriana Emery Cayube"
-                        className="w-16 h-16 rounded-full object-cover"
-                      />
-                      <p className="font-medium text-center">Adriana Emery Cayube</p>
-                      <p className="text-gray-600 text-sm">USDC 300</p>
-                    </div>
-
-              </div>
+        <div className="flex flex-row items-center gap-4 p-10 pl-20 pb-10 pt-10">
+          <img src="/winners.svg" alt="winners" className="w-[1160px] h-auto rounded-2xl"/>
+        </div>
       </div>
   </div>
 
 
      
 
-      {/* Grid Section */}
-      {/* <div className="w-full flex justify-center py-12">
-        <div className="grid grid-cols-4 grid-rows-4 gap-4 max-w-[1440px] w-full">
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg col-span-2"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg"></div>
-          <div className="h-[176px] bg-slate-100 rounded-lg col-span-2"></div>
-        </div>
-      </div> */}
+          {/* Our Mission Section - 3rd page*/}
+<div className="w-full flex justify-center py-[400px]">
+  <div className="flex flex-col md:flex-row items-center max-w-[1440px] w-full gap-12 px-6">
+    
+    {/* Text Content */}
+    <div className="flex flex-col max-w-[750px] text-left gap-6">
+      <h2 className="text-4xl font-bold text-white">Our Mission</h2>
+      <p className="text-lg font-thin text-white">
+        We help the most promising projects in the Solana ecosystem in the Philippines launch and grow. We are organized as a co-operative of creatives, developers, and operators who are experienced in launching and growing technology businesses.
+      </p>
+      <button className="inline-flex justify-center items-center gap-2 px-6 py-3 text-customBlue border-2 border-customBlue rounded-xl hover:bg-customBlue hover:text-white transition duration-300 max-w-[200px] font-semibold">
+        Join us here <span className="text-lg">➜</span>
+      </button>
+    </div>
+
+    {/* Grid Content */}
+    <div className="grid grid-cols-2 gap-4 md:gap-6">
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image1.png"
+          alt="Event Image 1"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image2.png"
+          alt="Event Image 2"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image3.png"
+          alt="Event Image 3"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image4.png"
+          alt="Event Image 4"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image5.png"
+          alt="Event Image 5"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image6.png"
+          alt="Event Image 6"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image7.png"
+          alt="Event Image 7"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+      <div className="w-full h-auto rounded-lg bg-white">
+        <Image
+          src="/image8.png"
+          alt="Event Image 8"
+          className="w-full h-full object-cover rounded-lg"
+          width={300}
+          height={200}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
     </>
   );
 }
