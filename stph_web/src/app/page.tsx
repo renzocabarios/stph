@@ -98,97 +98,22 @@ export default function Home() {
      
 
           {/* Our Mission Section - 3rd page*/}
-<div className="w-full flex justify-center py-[400px]">
-  <div className="flex flex-col md:flex-row items-center max-w-[1440px] w-full gap-12 px-6">
-    
-    {/* Text Content */}
-    <div className="flex flex-col max-w-[750px] text-left gap-6">
-      <h2 className="text-4xl font-bold text-white">Our Mission</h2>
-      <p className="text-lg font-thin text-white">
-        We help the most promising projects in the Solana ecosystem in the Philippines launch and grow. We are organized as a co-operative of creatives, developers, and operators who are experienced in launching and growing technology businesses.
-      </p>
-      <button className="inline-flex justify-center items-center gap-2 px-6 py-3 text-customBlue border-2 border-customBlue rounded-xl hover:bg-customBlue hover:text-white transition duration-300 max-w-[200px] font-semibold">
-        Join us here <span className="text-lg">➜</span>
-      </button>
-    </div>
+    <div className="w-full flex justify-center py-[200px]">
+      <div className="flex flex-col md:flex-row items-center max-w-[1440px] w-full gap-12 px-6">
+        
+        {/* Text Content */}
+        <div className="flex flex-col max-w-[375px] text-left gap-10">
+          <h2 className="text-5xl font-bold text-white">Our Mission</h2>
+          <p className="text-lg font-medium text-white pb-10">
+            We help the most promising projects in the Solana ecosystem in the Philippines launch and grow. We are organized as a co-operative of creatives, developers, and operators who are experienced in launching and growing technology businesses.
+          </p>
+          <button className="inline-flex justify-center items-center gap-2 px-6 py-3 text-customBlue border-2 border-customBlue rounded-xl hover:bg-customBlue hover:text-white transition duration-300 max-w-[200px] font-semibold">
+            Join us here <span className="text-lg">➜</span>
+          </button>
+        </div>
 
-    {/* Grid Content */}
-    <div className="grid grid-cols-2 gap-4 md:gap-6">
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image1.png"
-          alt="Event Image 1"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
-      </div>
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image2.png"
-          alt="Event Image 2"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
-      </div>
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image3.png"
-          alt="Event Image 3"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
-      </div>
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image4.png"
-          alt="Event Image 4"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
-      </div>
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image5.png"
-          alt="Event Image 5"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
-      </div>
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image6.png"
-          alt="Event Image 6"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
-      </div>
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image7.png"
-          alt="Event Image 7"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
-      </div>
-      <div className="w-full h-auto rounded-lg bg-white">
-        <Image
-          src="/image8.png"
-          alt="Event Image 8"
-          className="w-full h-full object-cover rounded-lg"
-          width={300}
-          height={200}
-        />
       </div>
     </div>
-  </div>
-</div>
 
 
       
