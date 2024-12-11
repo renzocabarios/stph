@@ -1,24 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Archivo', Arial, Helvetica, sans-serif;
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 20px;
-  background-image: url('/background.png');
+  background-image: url("/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
-
-.nav-item {
-  @apply flex gap-8 text-white text-lg font-medium;
-  font-size: 18px;
-  margin-right: 4rem;
-}
-
 
 @layer base {
   :root {
@@ -83,5 +76,4 @@ body {
   * {
     @apply border-border;
   }
-
 }
